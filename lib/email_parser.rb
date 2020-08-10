@@ -14,7 +14,10 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.all do {|email| 
+    @emails.all do |email|
+     email[-1].push ", "
+   end
+     @emails.uniq
  end
  
  def self.all
