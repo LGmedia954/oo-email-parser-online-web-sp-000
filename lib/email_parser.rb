@@ -14,6 +14,9 @@ class EmailAddressParser
   end
   
   def parse
+    @emails.detect do |email|
+    email
+    
     @emails.all do |email|
     emails
      email[-1].push ", " ||
