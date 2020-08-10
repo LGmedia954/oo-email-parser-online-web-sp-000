@@ -14,7 +14,7 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.all
+    @emails.all do {|email| 
  end
  
  def self.all
