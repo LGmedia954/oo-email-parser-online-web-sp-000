@@ -21,4 +21,8 @@ class EmailAddressParser
     @@all
   end
   
+   def save
+    @@all << self
+  end
+  
 end
