@@ -6,8 +6,7 @@
 class EmailAddressParser
   
   attr_accessor :emails
-  
-  @@all = []
+
   
   def initialize(emails = [""])
     @emails = emails
@@ -19,13 +18,6 @@ class EmailAddressParser
    end
      @emails.uniq
  end
- 
- def self.all
-    @@all
-  end
-  
-   def save
-    @@all << self
-  end
+
   
 end
